@@ -35,18 +35,21 @@ class HomeScreen extends StatelessWidget {
     },
   ];
 
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.cornsilk,
-      body: SafeArea(
-        child: SingleChildScrollView(
+      body: SafeArea( // avoid the notch and camera area
+        child: SingleChildScrollView( // allow vertical swiping
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: 20),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 24.0),
+              Padding( // اضافه مسافات داخليه حلو العناصر
+                padding: const EdgeInsets.symmetric(horizontal: 24.0),//مسافه من اليمين والشمال
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -299,12 +302,13 @@ class HomeScreen extends StatelessWidget {
                       color: AppColors.lightBronze,
                       screen: const GalleryScreen(),
                     ),
+
                     _buildNavButton(
                       context: context,
                       icon: Icons.info,
                       label: 'About',
                       color: AppColors.lightBronze,
-                      screen: const AboutScreen(),
+                      screen: const CoffeeGalleryApp(),
                     ),
                   ],
                 ),
@@ -316,6 +320,11 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
+
+
+
+
+
 
   Widget _buildNavButton({
     required BuildContext context,
