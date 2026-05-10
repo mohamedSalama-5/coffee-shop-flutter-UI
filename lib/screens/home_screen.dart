@@ -308,7 +308,7 @@ class HomeScreen extends StatelessWidget {
                       icon: Icons.info,
                       label: 'About',
                       color: AppColors.lightBronze,
-                      screen: const CoffeeGalleryApp(),
+                      screen: const CafeProfilePage(),
                     ),
                   ],
                 ),
