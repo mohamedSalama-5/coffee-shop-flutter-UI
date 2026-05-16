@@ -92,6 +92,9 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
+
+
+
               const SizedBox(height: 24),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24.0),
@@ -140,7 +143,13 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
+
               const SizedBox(height: 32),
+
+
+
+
+              // most popular 
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24.0),
                 child: Row(
@@ -258,6 +267,11 @@ class HomeScreen extends StatelessWidget {
                   },
                 ),
               ),
+              
+              //---------------------------------------------------------------
+              
+              
+              
               const SizedBox(height: 32),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24.0),
